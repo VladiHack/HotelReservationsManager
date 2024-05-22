@@ -1,0 +1,54 @@
+﻿@model HotelManager.Models.Reservation
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Reservation</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Arrival)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Arrival)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Departure)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Departure)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IncludedBreakfast)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IncludedBreakfast)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AllInclusive)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AllInclusive)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RoomId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RoomId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

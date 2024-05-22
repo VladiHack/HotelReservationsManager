@@ -1,0 +1,22 @@
+﻿@model HotelManager.Models.LoginEntity
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Logout</h1>
+
+<h4>User</h4>
+<hr />
+<div>
+    Успешно излязохте от акаунта си!
+</div>
+
+<div>
+    <a asp-controller="Home" asp-action="Index">Back to Home menu</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
